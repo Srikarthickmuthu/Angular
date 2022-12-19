@@ -6,5 +6,33 @@
 <h1>By using set and get methods</h1>
 <app-setParent></app-setParent>
 <hr>
-<app-dataParent></app-dataParent>
+<!-- <app-dataParent></app-dataParent>
+<hr> -->
+<app-lifecycle></app-lifecycle>
+<hr>
+<app-none></app-none>
+<hr>
+<app-emulated></app-emulated>
+<hr>
+<app-shadow></app-shadow>
+<hr>
+<app-first>
+    <p>In single </p>
+</app-first>
+<hr>
+<app-second>
+    <p question>
+        Is content projection cool?
+      </p>
+      <p>Let's learn about content projection!</p>
+</app-second>
+<hr>
+<app-third> 
+     <p>Let's learn about content projection!</p>
+    <ng-container ngProjectAs="[question]">
+      <p>Is content projection cool?</p>
+    </ng-container>
+</app-third>
+<hr>
+<app-interpolation></app-interpolation>
 <hr>
