@@ -7,6 +7,8 @@ import { parent } from './Interaction/P-C_Input-bindings/parent.component';
 import { child } from './Interaction/P-C_Input-bindings/child.component';
 import { setParent } from './Interaction/Setter/parent.component';
 import { setChild } from './Interaction/Setter/child.component';
+import { dataParent } from './DataSharing/parent.component';
+import { dataChild } from './DataSharing/child.component';
 //import { None } from './none.component';
 // import { Emulated } from './Encapsulation/emulated.component';
 // import { shadow } from './Encapsulation/shadowDom.component';
@@ -17,7 +19,9 @@ import { setChild } from './Interaction/Setter/child.component';
     parent,
     child,
     setParent,
-    setChild
+    setChild,
+    dataChild,
+    dataParent
     // None,
     // Emulated,
     // shadow
