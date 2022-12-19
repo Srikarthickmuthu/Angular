@@ -17,6 +17,9 @@ import { First } from './ContentProjection/first.component';
 import { second } from './ContentProjection/second.component';
 import { third } from './ContentProjection/third.component';
 import { interpolation } from './Templates/Interpolation/interpolation.component';
+import { Property } from './Templates/Bindings/Property/property.component';
+import { event } from './Templates/Bindings/EventBinding/event.component';
+
 
 
 
@@ -36,7 +39,9 @@ import { interpolation } from './Templates/Interpolation/interpolation.component
     None,
     Emulated,
     shadow,
-    interpolation
+    interpolation,
+    Property,
+    event
   ],
   imports: [
     BrowserModule,
