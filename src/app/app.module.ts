@@ -18,7 +18,8 @@ import { second } from './ContentProjection/second.component';
 import { third } from './ContentProjection/third.component';
 import { interpolation } from './Templates/Interpolation/interpolation.component';
 import { Property } from './Templates/Bindings/Property/property.component';
-import { event } from './Templates/Bindings/EventBinding/event.component';
+//import { event } from './Templates/Bindings/EventBinding/event.component';
+import { pipes } from './Templates/Pipes/pipes.component';
 
 
 
@@ -41,7 +42,8 @@ import { event } from './Templates/Bindings/EventBinding/event.component';
     shadow,
     interpolation,
     Property,
-    event
+    // event,
+    pipes
   ],
   imports: [
     BrowserModule,

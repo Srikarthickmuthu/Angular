@@ -1,0 +1,11 @@
+<h2>Pipes</h2>
+<h2>In-built pipes</h2>
+<p>My birthday date is {{birthday | date:'fullDate' |lowercase}}</p>
+<p>My birthday date is {{birthday | date:'MM/dd/yy'}}</p>
+<p>Currency : {{amount|currency:'EUR'}}</p>
+<p>Slice Pipes :{{value|slice:1:5}}</p>
+
+
+<p>The hero's birthday is {{ birthday | date:format }}</p>
+<button type="button" (click)="toggleFormat()">Toggle Format</button>
+
