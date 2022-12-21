@@ -4,5 +4,8 @@ import { Component } from "@angular/core";
     templateUrl:'./tempVariable.component.html'
 })
 export class tempVariable{
-    
+    calling(value:any){
+        // console.log(value);
+        return value;
+    }
 }

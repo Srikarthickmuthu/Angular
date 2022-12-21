@@ -22,6 +22,7 @@ import { Property } from './Templates/Bindings/Property/property.component';
 import { pipes } from './Templates/Pipes/pipes.component';
 import { CustompipesPipe } from './Templates/Pipes/customPipes/custompipes.pipe';
 import { tempVariable } from './Templates/Varaibles/tempVariable.component';
+import { SvgComponent } from './Templates/SVGtemplate/svg.component';
 
 
 
@@ -46,7 +47,8 @@ import { tempVariable } from './Templates/Varaibles/tempVariable.component';
     pipes,
     CustompipesPipe,
     // event,
-    tempVariable
+    tempVariable,
+    SvgComponent
   
   ],
   imports: [

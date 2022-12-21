@@ -1,3 +1,5 @@
+<h4>Template varaible</h4>
 <input #phone placeholder="phone number" />
 <br><br>
-<input value=#phone disabled />
+<button (click)="calling(phone.value)">call</button>
+<p>{{phone.value}}</p>
