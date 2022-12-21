@@ -10,6 +10,7 @@ import { setParent } from './Components/Interaction/Setter/parent.component';
 import { setChild } from './Components/Interaction/Setter/child.component';
 //import { dataParent } from './DataSharing/parent.component';
 //import { dataChild } from './DataSharing/child.component';
+import { main } from './Components/Encapsulation/main.component';
 import { LifecycleComponent } from './Components/lifecycle/lifecycle.component';
 import { None } from './Components/Encapsulation/none.component';
  import { Emulated } from './Components/Encapsulation/emulated.component';
@@ -40,6 +41,7 @@ import { SvgComponent } from './Templates/SVGtemplate/svg.component';
     First,
     second,
     third,
+    main,
     None,
     Emulated,
     shadow,

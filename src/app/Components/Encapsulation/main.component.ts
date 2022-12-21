@@ -1,11 +1,12 @@
 import { Component, ViewEncapsulation } from "@angular/core";
 @Component({
-    selector:'app-shadow',
-    template:`<h2>Shadow Dom<h2>
-    <div class='shadow'>Shadow Dom Encapsulation</div>`,
+    selector:'app-main',
+    template:`<app-none></app-none>
+    <app-emulated></app-emulated>
+    <app-shadow></app-shadow>`,
     styles:['h2,shadow{color:blue;}'],
     encapsulation:ViewEncapsulation.ShadowDom
 })
-export class shadow{
+export class main{
 
 }
