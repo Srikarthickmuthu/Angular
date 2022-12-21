@@ -20,7 +20,8 @@ import { interpolation } from './Templates/Interpolation/interpolation.component
 import { Property } from './Templates/Bindings/Property/property.component';
 //import { event } from './Templates/Bindings/EventBinding/event.component';
 import { pipes } from './Templates/Pipes/pipes.component';
-
+import { CustompipesPipe } from './Templates/Pipes/customPipes/custompipes.pipe';
+import { tempVariable } from './Templates/Varaibles/tempVariable.component';
 
 
 
@@ -42,8 +43,11 @@ import { pipes } from './Templates/Pipes/pipes.component';
     shadow,
     interpolation,
     Property,
+    pipes,
+    CustompipesPipe,
     // event,
-    pipes
+    tempVariable
+  
   ],
   imports: [
     BrowserModule,
