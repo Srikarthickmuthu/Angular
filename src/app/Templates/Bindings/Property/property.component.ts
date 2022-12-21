@@ -8,7 +8,12 @@ import { Component } from "@angular/core";
     }`]
 })
 export class Property{
+    isUnchanges=true;
+    constructor(){
+        setTimeout(() => {
+            this.isUnchanges=false;
+        }, 3000);
+    }
     itemImageUrl="../assets/images.jpeg";
-    isUnchanges="true";
     classes="special";
 }

@@ -4,5 +4,6 @@ import { Component } from "@angular/core";
     templateUrl:'attribute.component.html'
 })
 export class attribute{
-    
+    value='hello';
+    disabled1=false;
 }

@@ -4,6 +4,8 @@ import { Component } from "@angular/core";
     templateUrl:'./event.component.html'
 })
 export class event{
-    onClick(){
-    }
+    value='Hello Click Me!';
+   function(){
+        this.value="Haiii Karthick";
+   }
 }

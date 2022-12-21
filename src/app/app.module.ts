@@ -19,8 +19,10 @@ import { First } from './Components/ContentProjection/first.component';
 import { second } from './Components/ContentProjection/second.component';
 import { third } from './Components/ContentProjection/third.component';
 import { interpolation } from './Templates/Interpolation/interpolation.component';
+import { attribute } from './Templates/Bindings/AttributeBinding/attribute.component';
+import { classBinding } from './Templates/Bindings/ClassStyle/classBinding.component';
 import { Property } from './Templates/Bindings/Property/property.component';
-//import { event } from './Templates/Bindings/EventBinding/event.component';
+import { event } from './Templates/Bindings/EventBinding/event.component';
 import { pipes } from './Templates/Pipes/pipes.component';
 import { CustompipesPipe } from './Templates/Pipes/customPipes/custompipes.pipe';
 import { tempVariable } from './Templates/Varaibles/tempVariable.component';
@@ -46,10 +48,12 @@ import { SvgComponent } from './Templates/SVGtemplate/svg.component';
     Emulated,
     shadow,
     interpolation,
+    attribute,
+    classBinding,
     Property,
+    event,
     pipes,
     CustompipesPipe,
-    // event,
     tempVariable,
     SvgComponent
   
