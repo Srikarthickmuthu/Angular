@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 
 
-import { parent } from './Components/Interaction/P-C_Input-bindings/parent.component';
+
+import { parent} from './Components/Interaction/P-C_Input-bindings/parent.component';
 import { child } from './Components/Interaction/P-C_Input-bindings/child.component';
 import { setParent } from './Components/Interaction/Setter/parent.component';
 import { setChild } from './Components/Interaction/Setter/child.component';
@@ -13,7 +15,7 @@ import { setChild } from './Components/Interaction/Setter/child.component';
 import { main } from './Components/Encapsulation/main.component';
 import { LifecycleComponent } from './Components/lifecycle/lifecycle.component';
 import { None } from './Components/Encapsulation/none.component';
- import { Emulated } from './Components/Encapsulation/emulated.component';
+import { Emulated } from './Components/Encapsulation/emulated.component';
 import { shadow } from './Components/Encapsulation/shadowDom.component';
 import { First } from './Components/ContentProjection/first.component';
 import { second } from './Components/ContentProjection/second.component';
@@ -23,10 +25,13 @@ import { attribute } from './Templates/Bindings/AttributeBinding/attribute.compo
 import { classBinding } from './Templates/Bindings/ClassStyle/classBinding.component';
 import { Property } from './Templates/Bindings/Property/property.component';
 import { event } from './Templates/Bindings/EventBinding/event.component';
+import { twoWay } from './Templates/Bindings/TwoWay/twoWay.component';
 import { pipes } from './Templates/Pipes/pipes.component';
 import { CustompipesPipe } from './Templates/Pipes/customPipes/custompipes.pipe';
 import { tempVariable } from './Templates/Varaibles/tempVariable.component';
 import { SvgComponent } from './Templates/SVGtemplate/svg.component';
+
+
 
 
 
@@ -52,6 +57,7 @@ import { SvgComponent } from './Templates/SVGtemplate/svg.component';
     classBinding,
     Property,
     event,
+    twoWay,
     pipes,
     CustompipesPipe,
     tempVariable,
@@ -60,7 +66,8 @@ import { SvgComponent } from './Templates/SVGtemplate/svg.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
