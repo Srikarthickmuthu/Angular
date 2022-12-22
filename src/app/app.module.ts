@@ -34,6 +34,7 @@ import { structural } from './Directives/Structural/structural.component';
 import { HighlightDirective } from './Directives/Attribute/highlight.directive';
 import { builtIn } from './Directives/BuildInDirective/builtIn.component';
 import { CustomStructuralDirective } from './Directives/Structural/custom-structural.directive';
+import { DependancyComponent } from './DependancyInjection/dependancy/dependancy.component';
 
 
 
@@ -67,7 +68,8 @@ import { CustomStructuralDirective } from './Directives/Structural/custom-struct
     structural,
     HighlightDirective,
     builtIn,
-    CustomStructuralDirective
+    CustomStructuralDirective,
+    DependancyComponent
    
   ],
   imports: [
