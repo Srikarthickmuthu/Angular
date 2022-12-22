@@ -31,9 +31,9 @@ import { CustompipesPipe } from './Templates/Pipes/customPipes/custompipes.pipe'
 import { tempVariable } from './Templates/Varaibles/tempVariable.component';
 import { SvgComponent } from './Templates/SVGtemplate/svg.component';
 import { structural } from './Directives/Structural/structural.component';
-import { HighlightDirective } from './Directives/highlight.directive';
+import { HighlightDirective } from './Directives/Attribute/highlight.directive';
 import { builtIn } from './Directives/BuildInDirective/builtIn.component';
-
+import { CustomStructuralDirective } from './Directives/Structural/custom-structural.directive';
 
 
 
@@ -66,7 +66,8 @@ import { builtIn } from './Directives/BuildInDirective/builtIn.component';
     SvgComponent,
     structural,
     HighlightDirective,
-    builtIn
+    builtIn,
+    CustomStructuralDirective
    
   ],
   imports: [
