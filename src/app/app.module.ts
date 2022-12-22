@@ -30,7 +30,9 @@ import { pipes } from './Templates/Pipes/pipes.component';
 import { CustompipesPipe } from './Templates/Pipes/customPipes/custompipes.pipe';
 import { tempVariable } from './Templates/Varaibles/tempVariable.component';
 import { SvgComponent } from './Templates/SVGtemplate/svg.component';
-
+import { structural } from './Directives/Structural/structural.component';
+import { HighlightDirective } from './Directives/highlight.directive';
+import { builtIn } from './Directives/BuildInDirective/builtIn.component';
 
 
 
@@ -61,8 +63,11 @@ import { SvgComponent } from './Templates/SVGtemplate/svg.component';
     pipes,
     CustompipesPipe,
     tempVariable,
-    SvgComponent
-  
+    SvgComponent,
+    structural,
+    HighlightDirective,
+    builtIn
+   
   ],
   imports: [
     BrowserModule,

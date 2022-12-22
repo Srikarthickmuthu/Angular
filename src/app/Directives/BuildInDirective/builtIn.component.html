@@ -1,0 +1,23 @@
+<p>Built in attribute directives</p>
+<p>ngClass</p>
+<div [ngClass]="val>10 ?'red':'green'">
+    This value is {{val}}
+</div>
+
+<p>ngStyle</p>
+<div [ngStyle]="{'background-color':'green'}">
+    In this we use ngStyle
+</div>
+
+<p>ngFor</p>
+<ul>
+    <li *ngFor="let person of people">
+        {{ person.name }}
+    </li>
+</ul>
+
+<!-- <h2>ngIf</h2>
+<p *ngIf="true">hello</p>
+<p *ngIf="false">Haiiiii</p>
+
+<div *ngIf="books; then booksavail; else noBook">books</div> -->

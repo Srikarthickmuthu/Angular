@@ -6,12 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lifecycle.component.css']
 })
 export class LifecycleComponent implements OnInit {
-
-  constructor() { }
-
+  
+  constructor() {
+    console.log("dfghjk")
+   }
+  name="OnIn it";
+  show=false;
+  toggle(){
+    this.show=!this.show;
+  }
   ngOnInit(): void {
     console.log("component initialized");
   }
-  
-
 }
