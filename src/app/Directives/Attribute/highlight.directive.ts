@@ -8,6 +8,4 @@ export class HighlightDirective {
   constructor(private el: ElementRef) {
     this.el.nativeElement.style.backgroundColor = 'yellow';
  }
-
 }
-1
