@@ -1,6 +1,14 @@
-*{
-   text-align: center;
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(241, 213, 176);
 }
-h1{
-    color:blue;
+
+li {
+    padding: 15px 10px;
+}
+
+li:hover {
+    background-color: rgb(148, 135, 135);
 }

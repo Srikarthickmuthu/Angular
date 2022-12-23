@@ -4,7 +4,7 @@ import { Directive, Input } from '@angular/core';
   selector: '[appCustomStructural]'
 })
 export class CustomStructuralDirective {
-  show=false;
+  show=true;
   constructor() {
     setTimeout(() => {
       this.show=true;
