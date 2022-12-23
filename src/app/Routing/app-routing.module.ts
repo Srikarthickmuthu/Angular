@@ -5,7 +5,7 @@ import { pipes } from '../Templates/Pipes/pipes.component';
 
 const routes: Routes = [
   {path:'SVGtemplates',component:SvgComponent},
-  {path:'PipesTemplates',component:pipes}
+  {path:'PipeTemplates',component:pipes}
 ];
 
 @NgModule({
@@ -15,4 +15,3 @@ const routes: Routes = [
 export class AppRoutingModule { 
 
 }
-
