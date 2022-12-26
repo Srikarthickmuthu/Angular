@@ -32,7 +32,9 @@ import { HighlightDirective } from './Directives/Attribute/highlight.directive';
 import { builtIn } from './Directives/BuildInDirective/builtIn.component';
 import { CustomStructuralDirective } from './Directives/Structural/custom-structural.directive';
 import { DependancyComponent } from './DependancyInjection/dependancy/dependancy.component';
-
+import { FirstComponent } from './Routing/first/first.component';
+import { SecondComponent } from './Routing/second/second.component';
+import { error } from './Routing/error.component';
 
 
 @NgModule({
@@ -63,8 +65,10 @@ import { DependancyComponent } from './DependancyInjection/dependancy/dependancy
     HighlightDirective,
     builtIn,
     CustomStructuralDirective,
-    DependancyComponent
-   
+    DependancyComponent,
+    FirstComponent,
+    SecondComponent,
+    error
   ],
   imports: [
     BrowserModule,
