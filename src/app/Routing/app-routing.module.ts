@@ -17,8 +17,8 @@ const routes: Routes = [
   },
 
   { path: 'SecondComponent', component: SecondComponent },
-
-  {path:'items',loadChildren:()=>import('../Routing/first/first.component').then(m=>m.FirstComponent)},
+  
+  {path:'lazy',loadChildren:()=>import('../Routing/lazy/lazy.module').then(m=>m.LazyModule)},
 
   { path: '', redirectTo: '/SecondComponent', pathMatch: 'full' },
   { path: '**', component: error },
