@@ -35,6 +35,8 @@ import { DependancyComponent } from './DependancyInjection/dependancy/dependancy
 import { FirstComponent } from './Routing/first/first.component';
 import { SecondComponent } from './Routing/second/second.component';
 import { error } from './Routing/error.component';
+import { forms } from './Forms/forms.component';
+
 
 
 @NgModule({
@@ -68,7 +70,8 @@ import { error } from './Routing/error.component';
     DependancyComponent,
     FirstComponent,
     SecondComponent,
-    error
+    error,
+    forms
   ],
   imports: [
     BrowserModule,
