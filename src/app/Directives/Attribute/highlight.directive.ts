@@ -9,3 +9,4 @@ export class HighlightDirective {
     this.el.nativeElement.style.backgroundColor = 'yellow';
  }
 }
+

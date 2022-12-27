@@ -71,7 +71,7 @@ import { forms } from './Forms/forms.component';
     FirstComponent,
     SecondComponent,
     error,
-    forms
+    forms,
   ],
   imports: [
     BrowserModule,

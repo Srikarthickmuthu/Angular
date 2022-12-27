@@ -1,35 +1,46 @@
-<h3>Forms</h3>
-<form action="submit">
-<div>
-    <label for="fname">Enter your first name : </label>
-    <input type="text" id="fname">
-</div>
-<div>
-    <label for="lname">Enter your last name : </label>
-    <input id="lname" type="text">
-</div>
-<div>
-    <label for="number">Enter your number : </label>
-    <input id="number" type="number">
-</div>
-<div>
-    <label for="gender">Select your gender : </label>
-    <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
-    <input type="radio" id="others" name="gender" value="others"><label for="others">Others</label>
-</div>
-<div>
-    <label for="country">Select Your Country : </label>
-    <select for="country">
-        <option>Select any value</option>
-        <option value="india">India</option>
-        <option value="america">America</option>
-        <option value="chine">China</option>
-        <option value="russia">Russia</option>
-        <option value="srilanka">Srilanka</option>
-    </select>
-</div>
-<div>
-    <input type="submit">
-</div>
+<h2 appHighlight >Forms</h2>
+<form (ngSubmit)="onSubmit(userForm)" #userForm="ngForm">
+    <div>
+        <label>
+            Enter your first name : <input id="fname" name="fname" type="text" class="formcontrol" ngModel required fname>
+        </label>
+    </div>
+    <div>
+        <label>
+            Enter your last name : <input id="lname" name="lname" type="text" class="formcontrol" ngModel required lname>
+        </label>
+    </div>
+    <div>
+        <label>
+            Enter your number : <input id="number" name="number" type="number" class="formcontrol" ngModel required number> 
+        </label>
+    </div>
+    <div>
+        <label>
+            Enter your Mail ID : <input type="text" id="email" class="formcontrol" name="email" ngModel required email>
+        </label>
+    </div>
+    <div>
+        <label for="gender">Select your gender : </label>
+        <label>
+            <input type="radio" name="gender" value="male" ngModel> Male 
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female" ngModel> Female 
+        </label>
+        <label>
+            <input type="radio" name="gender" value="others" ngModel> Others 
+        </label>
+    </div>
+    <div>
+        <label for="country">Select Your Country : </label>
+        <select for="country" class="formcontrol" ngModel required>
+            <option *ngFor="let c of countryList">
+                {{c.countryname}}
+            </option>
+        </select>
+    </div>
+    <div>
+        <input id="submit" type="submit">
+    </div>
 </form>
