@@ -4,8 +4,6 @@ import { AppRoutingModule } from './Routing/app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
-
-
 import { parent} from './Components/Interaction/P-C_Input-bindings/parent.component';
 import { child } from './Components/Interaction/P-C_Input-bindings/child.component';
 import { setParent } from './Components/Interaction/Setter/parent.component';
@@ -36,7 +34,8 @@ import { FirstComponent } from './Routing/first/first.component';
 import { SecondComponent } from './Routing/second/second.component';
 import { error } from './Routing/error.component';
 import { forms } from './Forms/forms.component';
-
+import { Http } from './Http/http/http.component';
+import { UserService } from './Http/user.service';
 
 
 @NgModule({
@@ -72,6 +71,7 @@ import { forms } from './Forms/forms.component';
     SecondComponent,
     error,
     forms,
+    Http
   ],
   imports: [
     BrowserModule,

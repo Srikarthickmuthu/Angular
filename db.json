@@ -1,0 +1,19 @@
+{
+  "results": [
+    {
+      "id": "1",
+      "name": "Karthick",
+      "age": "22"
+    },
+    {
+      "id": "2",
+      "name": "Kumar",
+      "age": "21"
+    },
+    {
+      "id": "3",
+      "name": "Vijay Kumar",
+      "age": "22"
+    }
+  ]
+}
