@@ -5,7 +5,7 @@ import { Component, ViewEncapsulation } from "@angular/core";
     <div class="none">No encapsulation</div>
   `,
   styles:['h2,none{color:red;}'],
-  encapsulation:ViewEncapsulation.ShadowDom
+  encapsulation:ViewEncapsulation.None
 })
 export class None{
 
