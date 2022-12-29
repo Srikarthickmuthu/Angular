@@ -36,6 +36,8 @@ import { error } from './Routing/error.component';
 import { forms } from './Forms/forms.component';
 import { Http } from './Http/http/http.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LifecycleComponent } from './Components/Lifecycle/lifecycle.component';
+import { mainLife } from './Components/Lifecycle/main.component';
 
 
 @NgModule({
@@ -71,7 +73,9 @@ import { HttpClientModule } from '@angular/common/http';
     SecondComponent,
     error,
     forms,
-  Http
+  Http,
+  LifecycleComponent,
+  mainLife
   ],
   imports: [
     BrowserModule,

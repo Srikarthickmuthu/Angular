@@ -1,21 +1,36 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, OnChanges} from '@angular/core';
 
 @Component({
   selector: 'app-lifecycle',
-  templateUrl: './lifecycle.component.html',
-  styleUrls: ['./lifecycle.component.css']
+  templateUrl: './lifecycle.component.html'
 })
-export class LifecycleComponent implements OnInit {
-  
+export class LifecycleComponent implements OnInit, OnDestroy,OnChanges {
   constructor() {
-    console.log("dfghjk")
-   }
-  name="OnIn it";
-  show=false;
-  toggle(){
-    this.show=!this.show;
+    
   }
-  ngOnInit(): void {
+timeoutInterval: NodeJS.Timer | undefined;
+
+  show = false;
+  toggle() {
+    this.show = !this.show;
+  }
+
+  ngOnChanges(){
+    console.log("On changes");
+  }
+  ngOnInit() {
     console.log("component initialized");
+    this.timeoutInterval=  setInterval(()=>
+      {
+        console.log(new Date());
+      }
+      ,1000)
+    
+  }
+  ngOnDestroy() {
+    console.log("component destroyed");
+    if(this.timeoutInterval){
+      clearInterval(this.timeoutInterval);
+    }
   }
 }
