@@ -20,7 +20,7 @@ const routes: Routes = [
   
   {path:'lazy',loadChildren:()=>import('./lazy/lazy.module').then(m=>m.LazyModule)},
 
-  { path: '', redirectTo: '/SecondComponent', pathMatch: 'full' },
+  { path: '', redirectTo: '/SecondComponent', pathMatch: 'full' }, //
   { path: '**', component: error },
 ];
 

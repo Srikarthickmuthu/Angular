@@ -35,7 +35,7 @@ import { SecondComponent } from './Routing/second/second.component';
 import { error } from './Routing/error.component';
 import { forms } from './Forms/forms.component';
 import { Http } from './Http/http/http.component';
-import { UserService } from './Http/user.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -71,12 +71,13 @@ import { UserService } from './Http/user.service';
     SecondComponent,
     error,
     forms,
-    Http
+  Http
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

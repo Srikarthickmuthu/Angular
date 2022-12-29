@@ -1,11 +1,11 @@
 import { Component } from "@angular/core";
 @Component({
     selector:'app-parent',
-    template:`<h2>{{master}} controls {{hero}}
-    <app-child [hero]='hero' [master]='master'></app-child>`
+    template:`<h2>{{mastername}} controls {{heroname}}
+    <app-child [hero]='heroname' [master]='mastername'></app-child>`
 })
 export class parent{
-    hero='karthick';
-    master="sri";
+    heroname='karthick';
+    mastername="sri";
 
 }

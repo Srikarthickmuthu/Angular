@@ -9,7 +9,7 @@ import { Iuser } from '../user';
 export class Http implements OnInit{
   title = 'Http';
   
-  public users!:Iuser[];
+  public users!: Iuser[];
 
   constructor(public userservice:UserService){
   }

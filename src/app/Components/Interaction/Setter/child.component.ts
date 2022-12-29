@@ -5,10 +5,16 @@ import { Component, Input } from '@angular/core'
 })
 export class setChild {
     @Input()
-    get name(): string { return this._name; }
+    get name() : string {return this._name}
+
+    
 
     set name(name: string) {
         this._name = name;
     }
-    private _name = "";
+    constructor (){
+        console.log(this._name)
+    }
+     private _name = "";
 }
+
