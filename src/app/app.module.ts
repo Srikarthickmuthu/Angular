@@ -73,9 +73,9 @@ import { mainLife } from './Components/Lifecycle/main.component';
     SecondComponent,
     error,
     forms,
-  Http,
-  LifecycleComponent,
-  mainLife
+    Http,
+    LifecycleComponent,
+    mainLife
   ],
   imports: [
     BrowserModule,
