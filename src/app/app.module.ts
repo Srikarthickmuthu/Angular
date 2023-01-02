@@ -39,56 +39,56 @@ import { Http } from './Http/http/http.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LifecycleComponent } from './Components/Lifecycle/lifecycle.component';
 import { mainLife } from './Components/Lifecycle/main.component';
-import { ReactiveComponent } from './Forms/reactive/reactive.component';
+import { ReactiveComponent } from "./Forms/reactive/reactive.component";
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    parent,
-    child,
-    setParent,
-    setChild,
-    First,
-    second,
-    third,
-    main,
-    None,
-    Emulated,
-    shadow,
-    interpolation,
-    attribute,
-    classBinding,
-    Property,
-    event,
-    twoWay,
-    pipes,
-    CustompipesPipe,
-    tempVariable,
-    SvgComponent,
-    structural,
-    HighlightDirective,
-    builtIn,
-    CustomStructuralDirective,
-    DependancyComponent,
-    FirstComponent,
-    SecondComponent,
-    error,
-    forms,
-    Http,
-    LifecycleComponent,
-    mainLife,
-    ReactiveComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        parent,
+        child,
+        setParent,
+        setChild,
+        First,
+        second,
+        third,
+        main,
+        None,
+        Emulated,
+        shadow,
+        interpolation,
+        attribute,
+        classBinding,
+        Property,
+        event,
+        twoWay,
+        pipes,
+        CustompipesPipe,
+        tempVariable,
+        SvgComponent,
+        structural,
+        HighlightDirective,
+        builtIn,
+        CustomStructuralDirective,
+        DependancyComponent,
+        FirstComponent,
+        SecondComponent,
+        error,
+        forms,
+        Http,
+        LifecycleComponent,
+        mainLife,
+        ReactiveComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule
+    ]
 })
 export class AppModule {
   title='AngularProject';
