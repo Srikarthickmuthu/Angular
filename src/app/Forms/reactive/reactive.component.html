@@ -1,0 +1,47 @@
+<p>reactive Form</p>
+<form [formGroup]="userForm">
+    <div>
+        <label>
+            Enter your first name : <input id="fname" name="fname" type="text" class="formcontrol"  autocomplete="off" formControlName="fname" ngModel  required fname>
+        </label>
+    </div>
+    <div>
+        <label>
+            Enter your last name : <input id="lname" name="lname" type="text" class="formcontrol" autocomplete="off" formControlName="lname" ngModel required lname>
+        </label>
+    </div>
+    <div>
+        <label>
+            Enter your number : <input id="number" name="number" type="number" class="formcontrol" autocomplete="off" formControlName="number" ngModel required number> 
+        </label>
+    </div>
+    <div>
+        <label>
+            Enter your Mail ID : <input type="text" id="email" class="formcontrol" name="email" autocomplete="off" formControlName="email" ngModel required email>
+        </label>
+    </div>
+    <div>
+        <label for="gender" formControlName="gender">Select your gender : </label>
+        <label>
+            <input type="radio" name="gender" value="male" ngModel> Male 
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female" ngModel> Female 
+        </label>
+        <label>
+            <input type="radio" name="gender" value="others" ngModel> Others 
+        </label>
+    </div>
+    <div>
+        <label for="country">Select Your Country : </label>
+        <select for="country" class="formcontrol"  formControlName="country" ngModel required>
+            <option *ngFor="let c of countryList">
+                {{c.countryname}}
+            </option>
+        </select>
+    </div>
+    <div>
+        <input id="submit" type="submit">      
+    </div>
+</form>
+

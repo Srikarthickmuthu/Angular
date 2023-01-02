@@ -20,5 +20,4 @@ export class forms {
         { "countryname": "Srilanka" },
         { "countryname": "Russia" }
     ];
-
 }

@@ -17,8 +17,9 @@
     </div>
     <div>
         <label>
-            Enter your Mail ID : <input type="text" id="email" class="formcontrol" name="email" ngModel required email>
-        </label>
+            Enter your Mail ID : <input type="text" id="email" class="formcontrol" name="email" ngModel required email #email="ngModel">
+        </label><br>
+        <span *ngIf="!email.valid && email.touched">Please enter valid email</span>
     </div>
     <div>
         <label for="gender">Select your gender : </label>
@@ -41,6 +42,10 @@
         </select>
     </div>
     <div>
-        <input id="submit" type="submit">
+        <input id="submit" type="submit" [disabled]="!userForm.valid">      
     </div>
 </form>
+<hr>
+<div>
+    <app-reactive></app-reactive>
+</div>
