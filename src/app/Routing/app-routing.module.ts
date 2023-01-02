@@ -6,7 +6,6 @@ import { error } from './error.component';
 import { SvgComponent } from '../Templates/SVGtemplate/svg.component';
 import { pipes } from '../Templates/Pipes/pipes.component';
 
-
 const routes: Routes = [
   {
     path: 'FirstComponent', component: FirstComponent,
@@ -15,19 +14,13 @@ const routes: Routes = [
       { path: 'child-b',title:'pipes Next', component: pipes }
     ]
   },
-
-  { path: 'SecondComponent', component: SecondComponent },
-  
+  { path: 'SecondComponent', component: SecondComponent }, 
   {path:'lazy',loadChildren:()=>import('./lazy/lazy.module').then(m=>m.LazyModule)},
-
   { path: '', redirectTo: '/SecondComponent', pathMatch: 'full' }, //
   { path: '**', component: error },
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {
-
-}
+export class AppRoutingModule {}

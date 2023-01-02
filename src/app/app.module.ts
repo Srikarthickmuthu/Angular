@@ -4,6 +4,7 @@ import { AppRoutingModule } from './Routing/app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { parent} from './Components/Interaction/P-C_Input-bindings/parent.component';
 import { child } from './Components/Interaction/P-C_Input-bindings/child.component';
@@ -36,7 +37,6 @@ import { SecondComponent } from './Routing/second/second.component';
 import { error } from './Routing/error.component';
 import { forms } from './Forms/forms.component';
 import { Http } from './Http/http/http.component';
-import { HttpClientModule } from '@angular/common/http';
 import { LifecycleComponent } from './Components/Lifecycle/lifecycle.component';
 import { mainLife } from './Components/Lifecycle/main.component';
 import { ReactiveComponent } from "./Forms/reactive/reactive.component";
