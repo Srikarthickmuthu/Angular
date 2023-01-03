@@ -36,7 +36,7 @@ import { FirstComponent } from './Routing/first/first.component';
 import { SecondComponent } from './Routing/second/second.component';
 import { error } from './Routing/error.component';
 import { forms } from './Forms/forms.component';
-import { Http } from './Http/http/http.component';
+import { HttpComponent } from './Http/http/http.component';
 import { LifecycleComponent } from './Components/Lifecycle/lifecycle.component';
 import { mainLife } from './Components/Lifecycle/main.component';
 import { ReactiveComponent } from "./Forms/reactive/reactive.component";
@@ -75,10 +75,10 @@ import { ReactiveComponent } from "./Forms/reactive/reactive.component";
         SecondComponent,
         error,
         forms,
-        Http,
+        HttpComponent,
         LifecycleComponent,
         mainLife,
-        ReactiveComponent
+        ReactiveComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
