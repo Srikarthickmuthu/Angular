@@ -1,21 +1,21 @@
 import { Component,OnInit } from '@angular/core';
 import { UserService } from '../user.service';
-import { Iuser } from '../user';
+import { User } from '../user';
 @Component({
   selector: 'app-http',
   templateUrl:"./http.component.html",
   styleUrls: ['./http.component.css']
 })
-export class Http implements OnInit{
+export class HttpComponent implements OnInit{
   title = 'Http';
   
-  public users!: Iuser[];
+  public users!: User[];
 
   constructor(public userservice:UserService){
   }
   ngOnInit(){
     this.userservice.getUser().subscribe(
-      (      res: Iuser[]) => {
+      (      res: User[]) => {
       this.users=res;
     });
   } 
