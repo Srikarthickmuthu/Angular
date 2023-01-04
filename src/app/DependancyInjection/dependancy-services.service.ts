@@ -6,7 +6,6 @@ import { Injectable } from '@angular/core';
 export class DependancyServicesService {
   constructor() { 
     console.log('service class');
-
   }
   books=[{'name':'book1'},
 {'name':'book2'},

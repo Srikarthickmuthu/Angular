@@ -40,7 +40,10 @@ import { HttpComponent } from './Http/http/http.component';
 import { LifecycleComponent } from './Components/Lifecycle/lifecycle.component';
 import { mainLife } from './Components/Lifecycle/main.component';
 import { ReactiveComponent } from "./Forms/reactive/reactive.component";
-
+import { DynamicHost } from './Components/Dynamic/dynamic.directive';
+import { dynamic } from './Components/Dynamic/dynamic.component';
+import { dynamic1 } from './Components/Dynamic/dynamic1.component';
+import { MainDynamicComponent } from './Components/Dynamic/main-dynamic/main-dynamic.component';
 
 @NgModule({
     declarations: [
@@ -79,6 +82,10 @@ import { ReactiveComponent } from "./Forms/reactive/reactive.component";
         LifecycleComponent,
         mainLife,
         ReactiveComponent,
+        DynamicHost,
+        dynamic,
+        dynamic1,
+        MainDynamicComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -88,7 +95,8 @@ import { ReactiveComponent } from "./Forms/reactive/reactive.component";
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule
-    ]
+    ],
+    entryComponents:[dynamic,dynamic1]
 })
 export class AppModule {
   title='AngularProject';
