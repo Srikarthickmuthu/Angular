@@ -1,5 +1,8 @@
 export interface User{
-    id:Number;
-    name:String;
-    age:Number;
+    fname:String;
+    lname:String;
+    number:Number;
+    email:String;
+    gender:String;
+    country:String;
 }

@@ -12,6 +12,15 @@ export class HttpComponent implements OnInit{
   public users!: User[];
 
   constructor(public userservice:UserService){
+
+    const value={      "fname": "karthick",
+    "lname": "kumar",
+    "number": 1234,
+    "email": "abc@gmail.com",
+    "gender": "male",
+    "country": "india"};
+    
+    this.userservice.postTo(value).subscribe()
   }
   ngOnInit(){
     this.userservice.getUser().subscribe(
@@ -19,4 +28,5 @@ export class HttpComponent implements OnInit{
       this.users=res;
     });
   } 
+
 }

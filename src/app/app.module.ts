@@ -44,6 +44,7 @@ import { DynamicHost } from './Components/Dynamic/dynamic.directive';
 import { dynamic } from './Components/Dynamic/dynamic.component';
 import { dynamic1 } from './Components/Dynamic/dynamic1.component';
 import { MainDynamicComponent } from './Components/Dynamic/main-dynamic/main-dynamic.component';
+import { TestComponent } from './Testing/test/test.component';
 
 @NgModule({
     declarations: [
@@ -85,7 +86,8 @@ import { MainDynamicComponent } from './Components/Dynamic/main-dynamic/main-dyn
         DynamicHost,
         dynamic,
         dynamic1,
-        MainDynamicComponent
+        MainDynamicComponent,
+        TestComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

@@ -2,16 +2,23 @@
 <table>
     <thead>
         <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Age</th>
+            <th>Fname</th>
+            <th>lname</th>
+            <th>Number</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>country</th>
+
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let user of users">
-            <td>{{user.id}}</td>
-            <td>{{user.name}}</td>
-            <td>{{user.age}}</td>
+            <td>{{user.fname}}</td>
+            <td>{{user.lname}}</td>
+            <td>{{user.number}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.gender}}</td>
+            <td>{{user.country}}</td>
         </tr>
     </tbody>
 </table>
