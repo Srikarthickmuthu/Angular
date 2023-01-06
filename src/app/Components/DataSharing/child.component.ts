@@ -1,7 +1,9 @@
 import { Component, Input,Output,EventEmitter} from "@angular/core";
 @Component({
     selector:'app-dataChild',
-    template:`<p>A data from parent : {{item}}</p>
+    template:`
+    <h5>Child</h5>
+    <p>A data from parent : {{item}}</p>
     <label for="item-input">Add an item:</label>
 <input type="text" id="item-input" #newItem>
 <button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>

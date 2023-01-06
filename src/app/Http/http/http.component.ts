@@ -7,6 +7,7 @@ import { User } from '../user';
   styleUrls: ['./http.component.css']
 })
 export class HttpComponent implements OnInit{
+  
   title = 'Http';
   
   public users!: User[];

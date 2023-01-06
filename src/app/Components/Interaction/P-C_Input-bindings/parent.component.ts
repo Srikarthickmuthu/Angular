@@ -1,7 +1,8 @@
 import { Component, Output } from "@angular/core";
 @Component({
     selector:'app-parent',
-    template:`<h2>{{mastername}} controls {{heroname}} {{send}} </h2>
+    template:`
+    <p>{{mastername}} controls {{heroname}} {{send}} </p>
     <app-child (send)="send=$event" [hero]='heroname' [master]='mastername'></app-child>`
 })
 export class parent{

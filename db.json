@@ -7,29 +7,6 @@
       "email": "abc@gmail.com",
       "gender": "male",
       "country": "india"
-    },
-    {
-      "id": 123,
-      "name": "karthick",
-      "age": 222
-    },
-    {
-      "fname": "karthick",
-      "lname": "kumar",
-      "number": 1234,
-      "email": "abc@gmail.com",
-      "gender": "male",
-      "country": "india",
-      "id": 124
-    },
-    {
-      "fname": "karthick",
-      "lname": "kumar",
-      "number": 1234,
-      "email": "abc@gmail.com",
-      "gender": "male",
-      "country": "india",
-      "id": 125
-    }
+    }   
   ]
 }

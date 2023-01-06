@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, OnChanges} from '@angular/core';
+import { Component, OnInit, OnDestroy, OnChanges, SimpleChanges, Input} from '@angular/core';
 
 @Component({
   selector: 'app-lifecycle',
@@ -14,11 +14,10 @@ timeoutInterval: NodeJS.Timer | undefined;
   toggle() {
     this.show = !this.show;
   }
+  
+  @Input() message!: string;
 
-  ngOnChanges(){
-    console.log("On changes");
-  }
-  ngOnInit() {
+  ngOnInit(): void {
     console.log("component initialized");
     this.timeoutInterval=  setInterval(()=>
       {
@@ -33,4 +32,8 @@ timeoutInterval: NodeJS.Timer | undefined;
       clearInterval(this.timeoutInterval);
     }
   }
+
+  ngOnChanges(changes:SimpleChanges){
+    console.log("changes happenning");
+}
 }

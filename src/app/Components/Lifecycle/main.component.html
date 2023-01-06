@@ -1,2 +1,10 @@
-<app-lifecycle *ngIf="show" ></app-lifecycle>
+<h2>Life Cycle Hooks</h2>
+<input type="text" [(ngModel)]="message">
+<br><br>
 <button (click)="toggle()">Toggle</button>
+<div *ngIf="show">
+    <ng-content></ng-content>
+</div>
+<div *ngIf="show">
+<app-lifecycle [message]="message"></app-lifecycle>
+</div>

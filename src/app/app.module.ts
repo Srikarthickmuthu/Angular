@@ -6,8 +6,12 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+
+
 import { parent} from './Components/Interaction/P-C_Input-bindings/parent.component';
 import { child } from './Components/Interaction/P-C_Input-bindings/child.component';
+import { dataParent } from './Components/DataSharing/parent.component';
+import { dataChild } from './Components/DataSharing/child.component';
 import { setParent } from './Components/Interaction/Setter/parent.component';
 import { setChild } from './Components/Interaction/Setter/child.component';
 import { main } from './Components/Encapsulation/main.component';
@@ -47,12 +51,16 @@ import { MainDynamicComponent } from './Components/Dynamic/main-dynamic/main-dyn
 import { TestComponent } from './Testing/test/test.component';
 
 @NgModule({
+
     declarations: [
+
         AppComponent,
         parent,
         child,
         setParent,
         setChild,
+        dataChild,
+        dataParent,
         First,
         second,
         third,
@@ -89,8 +97,11 @@ import { TestComponent } from './Testing/test/test.component';
         MainDynamicComponent,
         TestComponent
     ],
+
     providers: [],
+
     bootstrap: [AppComponent],
+
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -98,8 +109,12 @@ import { TestComponent } from './Testing/test/test.component';
         ReactiveFormsModule,
         HttpClientModule
     ],
+
     entryComponents:[dynamic,dynamic1]
 })
+
 export class AppModule {
+
   title='AngularProject';
+
 }

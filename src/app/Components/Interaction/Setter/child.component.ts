@@ -7,14 +7,11 @@ export class setChild {
     @Input()
     get name() : string {return this._name}
 
-    
-
     set name(name: string) {
         this._name = name;
     }
-    constructor (){
-        console.log(this._name)
+    constructor (){   
     }
-     private _name = "";
+    private _name = "";
 }
 

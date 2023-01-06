@@ -1,7 +1,7 @@
 import {Component,EventEmitter,Input, Output} from '@angular/core';
 @Component({
     selector:'app-child',
-    template:`<h3>{{heroname}} says the name {{mastername}}</h3>
+    template:`<p>{{heroname}} says the name {{mastername}}</p>
     <button (click)="sending()">Click</button>`
 
 })

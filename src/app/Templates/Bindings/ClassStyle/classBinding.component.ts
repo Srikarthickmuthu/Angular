@@ -5,12 +5,15 @@ import { Component } from "@angular/core";
     styleUrls:['./classBinding.component.css']
 })
 export class classBinding{
+
     myClass='a';
+
     isTrue:boolean=false;
+
     constructor(){
         setTimeout(() => {
             this.myClass='b';
             this.isTrue=true;
-        },3000);
+        },5000);
     }
 }
